@@ -50,6 +50,7 @@ func (curve *Curve) Params() *elliptic.CurveParams {
 		Gx:      curve.Gx,
 		Gy:      curve.Gy,
 		BitSize: curve.BitSize,
+		Name:    curve.Name,
 	}
 }
 
