@@ -39,6 +39,7 @@ type Curve struct {
 	B       *big.Int // the constant of the Curve equation
 	Gx, Gy  *big.Int // (x,y) of the base point
 	BitSize int      // the size of the underlying field
+	Name    string   // name of the curve
 }
 
 func (curve *Curve) Params() *elliptic.CurveParams {
